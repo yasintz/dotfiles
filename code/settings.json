@@ -1,236 +1,258 @@
 {
-    "terminal.integrated.shell.windows": "C:/Windows/System32/cmd.exe",
-    // emmet
-    "emmet.includeLanguages": {
-      "vue": "html"
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+  // emmet
+  "emmet.includeLanguages": {
+    "vue": "html"
+  },
+  "html-css-class-completion.includeGlobPattern": "**/*.{css,html,vue,js}",
+  "html-css-class-completion.enableEmmetSupport": true,
+  //vetur
+  "update.channel": "none",
+  "vetur.validation.template": false,
+  "vetur.format.defaultFormatter.js": "prettier",
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "wrap_attributes": "force-expand-multiline"
     },
-    "html-css-class-completion.includeGlobPattern": "**/*.{css,html,vue,js}",
-    "html-css-class-completion.enableEmmetSupport": true,
-    //vetur
-    "update.channel": "none",
-    "vetur.validation.template": false,
-    "vetur.format.defaultFormatter.js": "prettier",
-    "vetur.format.defaultFormatterOptions": {
-      "js-beautify-html": {
-        "wrap_attributes": "force-expand-multiline"
-      },
-      "prettyhtml": {
-        "printWidth": 100,
-        "singleQuote": false,
-        "wrapAttributes": false,
-        "sortAttributes": false
-      },
-      "prettier": {
-        "singleQuote": true,
-        "trailingComma": "es5",
-        "jsxSingleQuote": true
-      }
+    "prettyhtml": {
+      "printWidth": 100,
+      "singleQuote": false,
+      "wrapAttributes": false,
+      "sortAttributes": false
     },
-    // undefined
-    "files.eol": "n",
-    "files.exclude": {
-      "**/.git": true,
-      "**/.github": true,
-      "**/.idea": true,
-      "**/.metadata": true,
-      "**/.packages": true,
-      "**/.svn": true,
-      "**/pubspec.lock": true,
-      "**/.hg": true,
-      "**/.flutter-plugins": true,
-      "**/CVS": true,
-      "**/.DS_Store": true,
-      "**/node_modules": true
-    },
-    "debug.showInStatusBar": "never",
-    "breadcrumbs.enabled": true,
-    // window
-    "window.zoomLevel": -1,
-    "window.titleBarStyle": "custom",
-    "window.menuBarVisibility": "default",
-    // lang cutomize
-    "html.validate.scripts": false,
-    "typescript.updateImportsOnFileMove.enabled": "never",
-    "javascript.updateImportsOnFileMove.enabled": "never",
-    "dart.promptToGetPackages": false,
-    "dart.runPubGetOnPubspecChanges": false,
-    "java.home": "C:/Program Files/Java/jdk1.8.0_172",
-    //explorer
-    "explorer.confirmDelete": false,
-    // workbench
-    "workbench.sideBar.location": "right",
-    "workbench.settings.editor": "json",
-    "workbench.startupEditor": "newUntitledFile",
-    //matching tag
-    "highlight-matching-tag.styles": {
-      "opening": {
-        "name": {
-          "custom": {
-            "color": "#dccb0e"
-          }
-        }
-      }
-    },
-    //color icon
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "Monokai",
-    "workbench.colorCustomizations": {
-      "editor.findMatchBackground": "#fff",
-      "editor.findMatchHighlightBackground": "#fff",
-      "editor.findMatchHighlightBorder": "#efff00",
-      "editor.findRangeHighlightBackground": "#fff",
-      "editor.selectionHighlightBorder": "#1aff00",
-      "editor.selectionBackground": "#284225",
-      "editorLineNumber.activeForeground": "#efff00",
-      "editor.background": "#24262E",
-      "activityBar.background": "#272932",
-      "statusBar.background": "#272932",
-      "sideBar.background": "#1e2027",
-      "tab.activeBackground": "#4749af",
-      "tab.inactiveBackground": "#24262E",
-      "tab.border": "#ababab",
-      "titleBar.activeBackground": "#272932"
-    },
-    // git
-    "gitlens.codeLens.recentChange.enabled": false,
-    "gitlens.codeLens.authors.enabled": false,
-    "git.enableSmartCommit": true,
-    // eslint - prettier
-    "prettier.jsxSingleQuote": true,
-    "prettier.singleQuote": true,
-    "prettier.trailingComma": "es5",
-    "prettier.eslintIntegration": true,
-    "eslint.enable": false,
-    "eslint.validate": [
-      "javascript",
-      "javascriptreact",
-      { "language": "vue", "autoFix": true }
-    ],
-    // vim
-    "vim.foldfix": true,
-    "vim.visualModeKeyBindings": [
-      {
-        "before": ["J"],
-        "after": ["1", "5", "j"]
-      },
-      {
-        "before": ["K"],
-        "after": ["1", "5", "k"]
-      },
-      {
-        "before": ["L"],
-        "after": ["2", "2", "l"]
-      },
-      {
-        "before": ["H"],
-        "after": ["2", "2", "h"]
-      }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-      {
-        "before": ["T"],
-        "after": ["i", "<Enter>", "<Esc>"]
-      },
-      {
-        "before": ["Y"],
-        "after": ["v", "k", "$", "x"]
-      },
-      {
-        "before": [","],
-        "after": ["<C-e>"]
-      },
-      {
-        "before": ["m"],
-        "after": ["<C-y>"]
-      },
-  
-      {
-        "before": ["J"],
-        "after": ["1", "5", "j"]
-      },
-      {
-        "before": ["K"],
-        "after": ["1", "5", "k"]
-      },
-      {
-        "before": ["L"],
-        "after": ["2", "2", "l"]
-      },
-      {
-        "before": ["H"],
-        "after": ["2", "2", "h"]
-      }
-    ],
-    // editor
-    "editor.renderLineHighlight": "all",
-    "editor.minimap.enabled": false,
-    "editor.wordWrap": "on",
-    "editor.tabSize": 2,
-    "editor.fontSize": 15,
-    "editor.cursorStyle": "block",
-    "editor.rulers": [120],
-    //color
-    "editor.tokenColorCustomizations": {
-      "comments": "#6A9955",
-      "strings": "#CE9178",
-      "textMateRules": [
-        {
-          "name": "Function Call Variable",
-          "scope": "variable.other.property",
-          "settings": {
-            "fontStyle": "",
-            "foreground": "#c353b8"
-          }
-        },
-        {
-          "scope": ["keyword.control", "storage.type"],
-          "settings": {
-            "fontStyle": "italic bold",
-            "foreground": "#ef66e1"
-          }
-        },
-        {
-          "scope": ["support.class", "keyword.operator"],
-          "settings": {
-            "fontStyle": "italic bold",
-            "foreground": "#7a9fff"
-          }
-        },
-        {
-          "scope": ["entity.other.attribute-name"],
-          "settings": {
-            "fontStyle": "italic bold",
-            "foreground": "#9DCDB3"
-          }
-        },
-        {
-          "scope": "support.variable",
-          "settings": {
-            "fontStyle": "italic",
-            "foreground": "#ef6666"
-          }
-        },
-        {
-          "scope": ["entity.other.inherited-class", "entity.name.type"],
-          "settings": {
-            "fontStyle": "",
-            "foreground": "#24b649"
-          }
-        },
-        {
-          "scope": "meta.object-literal.key",
-          "settings": {
-            "foreground": "#9CDCFE"
-          }
-        },
-        {
-          "scope": "variable",
-          "settings": {
-            "foreground": "#ff4225",
-            "fontStyle": "bold"
-          }
-        }
-      ]
+    "prettier": {
+      "singleQuote": true,
+      "trailingComma": "es5",
+      "jsxSingleQuote": true
     }
+  },
+  // undefined
+  "files.eol": "\n",
+  "debug.showInStatusBar": "never",
+  "breadcrumbs.enabled": true,
+  // exclude
+  "files.exclude": {
+    // folder
+    "**/.git": true,
+    "**/.github": true,
+    "**/.idea": true,
+    "**/.metadata": true,
+    "**/.packages": true,
+    "**/.svn": true,
+    "**/pubspec.lock": true,
+    "**/.hg": true,
+    "**/.flutter-plugins": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    // ".vscode": true,
+    // file
+    // "**/*ignore": true,
+    "**/*.log": true
+  },
+  "search.exclude": {
+    // folder
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.vscode": true
+    // file
+    // "**/*.yml": true,
+    // "**/*.svg": true,
+    // "**/.eslintrc": true,
+    // "**/.eslintrc.json": true,
+    // "**/.babelrc": true,
+    // "**/.prettierrc": true,
+    // "**/.sequelizer": true,
+    // "**/.flowconfig": true,
+    // "**/*docker*": true,
+    // "**/*Docker*": true
+  },
+  // window
+  "window.zoomLevel": -1,
+  "window.titleBarStyle": "custom",
+  "window.menuBarVisibility": "default",
+  // lang cutomize
+  "html.validate.scripts": false,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "dart.promptToGetPackages": false,
+  "dart.runPubGetOnPubspecChanges": false,
+  "java.home": "C:/Program Files/Java/jdk1.8.0_172",
+  //explorer
+  "explorer.confirmDelete": false,
+  // workbench
+  "workbench.sideBar.location": "right",
+  "workbench.settings.editor": "json",
+  "workbench.startupEditor": "newUntitledFile",
+  //matching tag
+  "highlight-matching-tag.styles": {
+    "opening": {
+      "name": {
+        "custom": {
+          "color": "#dccb0e"
+        }
+      }
+    }
+  },
+  //color icon
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Monokai",
+  "workbench.colorCustomizations": {
+    "editor.findMatchBackground": "#fff",
+    "editor.findMatchHighlightBackground": "#fff",
+    "editor.findMatchHighlightBorder": "#efff00",
+    "editor.findRangeHighlightBackground": "#fff",
+    "editor.selectionHighlightBorder": "#1aff00",
+    "editor.selectionBackground": "#284225",
+    "editorLineNumber.activeForeground": "#efff00",
+    "editor.background": "#24262E",
+    "activityBar.background": "#272932",
+    "statusBar.background": "#272932",
+    "sideBar.background": "#1e2027",
+    "tab.activeBackground": "#4749af",
+    "tab.inactiveBackground": "#24262E",
+    "tab.border": "#ababab",
+    "titleBar.activeBackground": "#272932"
+  },
+  // git
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "git.enableSmartCommit": true,
+  // eslint - prettier
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  "prettier.eslintIntegration": true,
+  "eslint.enable": false,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    { "language": "vue", "autoFix": true }
+  ],
+  // vim
+  "vim.foldfix": true,
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["J"],
+      "after": ["1", "5", "j"]
+    },
+    {
+      "before": ["K"],
+      "after": ["1", "5", "k"]
+    },
+    {
+      "before": ["L"],
+      "after": ["2", "2", "l"]
+    },
+    {
+      "before": ["H"],
+      "after": ["2", "2", "h"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["T"],
+      "after": ["i", "<Enter>", "<Esc>"]
+    },
+    {
+      "before": ["Y"],
+      "after": ["v", "k", "$", "x"]
+    },
+    {
+      "before": [","],
+      "after": ["<C-e>"]
+    },
+    {
+      "before": ["m"],
+      "after": ["<C-y>"]
+    },
+
+    {
+      "before": ["J"],
+      "after": ["1", "5", "j"]
+    },
+    {
+      "before": ["K"],
+      "after": ["1", "5", "k"]
+    },
+    {
+      "before": ["L"],
+      "after": ["2", "2", "l"]
+    },
+    {
+      "before": ["H"],
+      "after": ["2", "2", "h"]
+    }
+  ],
+  // editor
+  "editor.renderLineHighlight": "all",
+  "editor.minimap.enabled": false,
+  "editor.wordWrap": "on",
+  "editor.tabSize": 2,
+  "editor.fontSize": 15,
+  "editor.cursorStyle": "block",
+  "editor.rulers": [120],
+  //color
+  "editor.tokenColorCustomizations": {
+    "comments": "#6A9955",
+    "strings": "#CE9178",
+    "textMateRules": [
+      {
+        "name": "Function Call Variable",
+        "scope": "variable.other.property",
+        "settings": {
+          "fontStyle": "",
+          "foreground": "#c353b8"
+        }
+      },
+      {
+        "scope": ["keyword.control", "storage.type"],
+        "settings": {
+          "fontStyle": "italic bold",
+          "foreground": "#ef66e1"
+        }
+      },
+      {
+        "scope": ["support.class", "keyword.operator"],
+        "settings": {
+          "fontStyle": "italic bold",
+          "foreground": "#7a9fff"
+        }
+      },
+      {
+        "scope": ["entity.other.attribute-name"],
+        "settings": {
+          "fontStyle": "italic bold",
+          "foreground": "#9DCDB3"
+        }
+      },
+      {
+        "scope": "support.variable",
+        "settings": {
+          "fontStyle": "italic",
+          "foreground": "#ef6666"
+        }
+      },
+      {
+        "scope": ["entity.other.inherited-class", "entity.name.type"],
+        "settings": {
+          "fontStyle": "",
+          "foreground": "#24b649"
+        }
+      },
+      {
+        "scope": "meta.object-literal.key",
+        "settings": {
+          "foreground": "#9CDCFE"
+        }
+      },
+      {
+        "scope": "variable",
+        "settings": {
+          "foreground": "#ff4225",
+          "fontStyle": "bold"
+        }
+      }
+    ]
   }
-  
+}
