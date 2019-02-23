@@ -986,11 +986,6 @@
     "command": "-workbench.action.focusEighthEditorGroup"
   },
   {
-    "key": "alt+c",
-    "command": "editor.foldAllMarkerRegions",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "ctrl+k ctrl+8",
     "command": "-editor.foldAllMarkerRegions",
     "when": "editorTextFocus"
@@ -1027,5 +1022,15 @@
   {
     "key": "alt+8",
     "command": "-workbench.action.openEditorAtIndex8"
+  },
+  {
+    "key": "ctrl+[",
+    "command": "-extension.vim_ctrl+[",
+    "when": "editorTextFocus && vim.active && vim.use<C-[> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+[",
+    "command": "-editor.action.outdentLines",
+    "when": "editorTextFocus && !editorReadonly"
   }
 ]

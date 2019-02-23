@@ -123,7 +123,6 @@
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
   "prettier.eslintIntegration": true,
-  "eslint.enable": false,
   "eslint.validate": [
     "javascript",
     "javascriptreact",
