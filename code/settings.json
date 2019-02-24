@@ -7,7 +7,7 @@
   "html-css-class-completion.includeGlobPattern": "**/*.{css,html,vue,js}",
   "html-css-class-completion.enableEmmetSupport": true,
   //vetur
-  "update.channel": "none",
+  // "update.channel": "none",
   "vetur.validation.template": false,
   "vetur.format.defaultFormatter.js": "prettier",
   "vetur.format.defaultFormatterOptions": {
