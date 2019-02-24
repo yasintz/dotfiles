@@ -1032,5 +1032,17 @@
     "key": "ctrl+[",
     "command": "-editor.action.outdentLines",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+f1",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm"
+  },
+  {
+    "key": "shift+f2",
+    "command": "workbench.view.extension.gitlens"
   }
 ]

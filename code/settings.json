@@ -114,9 +114,6 @@
     "tab.border": "#ababab",
     "titleBar.activeBackground": "#272932"
   },
-  // git
-  "gitlens.codeLens.recentChange.enabled": false,
-  "gitlens.codeLens.authors.enabled": false,
   "git.enableSmartCommit": true,
   // eslint - prettier
   "prettier.jsxSingleQuote": true,
@@ -253,5 +250,10 @@
         }
       }
     ]
-  }
+  },
+  "gitlens.advanced.messages": {
+    "suppressLineUncommittedWarning": true
+  },
+  "gitlens.codeLens.enabled": false,
+  "gitlens.statusBar.enabled": false
 }
