@@ -1,4 +1,15 @@
 {
+  "localextension.multi-commands": [
+    {
+      "exec": "localextension.multi.down",
+      "commandList": [
+        {
+          "exec": "tap:<C-a>"
+        },
+      ]
+      // "repeat": 4
+    }
+  ],
   "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
   // emmet
   "emmet.includeLanguages": {
@@ -123,62 +134,64 @@
   "eslint.validate": [
     "javascript",
     "javascriptreact",
-    { "language": "vue", "autoFix": true }
+    {
+      "language": "vue",
+      "autoFix": true
+    }
   ],
   // vim
   "vim.foldfix": true,
-  "vim.visualModeKeyBindings": [
-    {
-      "before": ["J"],
-      "after": ["1", "5", "j"]
-    },
-    {
-      "before": ["K"],
-      "after": ["1", "5", "k"]
-    },
-    {
-      "before": ["L"],
-      "after": ["2", "2", "l"]
-    },
-    {
-      "before": ["H"],
-      "after": ["2", "2", "h"]
-    }
-  ],
+  // "vim.visualModeKeyBindings": [
+  //   {
+  //     "before": ["J"],
+  //     "after": ["1", "5", "j"]
+  //   },
+  //   {
+  //     "before": ["K"],
+  //     "after": ["1", "5", "k"]
+  //   },
+  //   {
+  //     "before": ["L"],
+  //     "after": ["2", "2", "l"]
+  //   },
+  //   {
+  //     "before": ["H"],
+  //     "after": ["2", "2", "h"]
+  //   }
+  // ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["T"],
-      "after": ["i", "<Enter>", "<Esc>"]
-    },
-    {
-      "before": ["Y"],
-      "after": ["v", "k", "$", "x"]
-    },
-    {
-      "before": [","],
-      "after": ["<C-e>"]
-    },
-    {
-      "before": ["m"],
-      "after": ["<C-y>"]
-    },
-
-    {
-      "before": ["J"],
-      "after": ["1", "5", "j"]
-    },
-    {
-      "before": ["K"],
-      "after": ["1", "5", "k"]
-    },
-    {
-      "before": ["L"],
-      "after": ["2", "2", "l"]
-    },
-    {
-      "before": ["H"],
-      "after": ["2", "2", "h"]
+      "after": ["i", "<Enter>", "<Esc>","a"]
     }
+    // {
+    //   "before": ["Y"],
+    //   "after": ["v", "k", "$", "x"]
+    // },
+    // {
+    //   "before": [","],
+    //   "after": ["<C-e>"]
+    // },
+    // {
+    //   "before": ["m"],
+    //   "after": ["<C-y>"]
+    // },
+    // {
+    //   "before": ["J"],
+    //   "after": ["1", "5", "j"]
+    // },
+    // {
+    //   "before": ["K"],
+    //   "after": ["1", "5", "k"]
+    // },
+    // {
+    //   "before": ["L"],
+    //   "after": ["2", "2", "l"]
+    // },
+    // {
+    //   "before": ["H"],
+    //   "after": ["2", "2", "h"]
+    // }
   ],
   // editor
   "editor.renderLineHighlight": "all",
@@ -188,6 +201,12 @@
   "editor.fontSize": 15,
   "editor.cursorStyle": "block",
   "editor.rulers": [120],
+  // gitlens
+  "gitlens.advanced.messages": {
+    "suppressLineUncommittedWarning": true
+  },
+  "gitlens.codeLens.enabled": false,
+  "gitlens.statusBar.enabled": false,
   //color
   "editor.tokenColorCustomizations": {
     "comments": "#6A9955",
@@ -250,10 +269,5 @@
         }
       }
     ]
-  },
-  "gitlens.advanced.messages": {
-    "suppressLineUncommittedWarning": true
-  },
-  "gitlens.codeLens.enabled": false,
-  "gitlens.statusBar.enabled": false
+  }
 }

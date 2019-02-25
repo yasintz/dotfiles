@@ -1,7 +1,11 @@
 [
   {
+    "key": "f2",
+    "command": "localextension.multi.down",
+  },
+  {
     "key": "ctrl+n",
-    "command": "workbench.view.explorer",
+    "command": "workbench.view.explorer"
   },
   {
     "key": "ctrl+shift+e",
@@ -1044,5 +1048,10 @@
   {
     "key": "shift+f2",
     "command": "workbench.view.extension.gitlens"
+  },
+  {
+    "key": "ctrl+a",
+    "command": "-extension.vim_ctrl+a",
+    "when": "editorTextFocus && vim.active && vim.use<C-a> && !inDebugRepl"
   }
 ]
