@@ -5,7 +5,7 @@
       "commandList": [
         {
           "exec": "tap:<C-a>"
-        },
+        }
       ]
       // "repeat": 4
     }
@@ -141,57 +141,57 @@
   ],
   // vim
   "vim.foldfix": true,
-  // "vim.visualModeKeyBindings": [
-  //   {
-  //     "before": ["J"],
-  //     "after": ["1", "5", "j"]
-  //   },
-  //   {
-  //     "before": ["K"],
-  //     "after": ["1", "5", "k"]
-  //   },
-  //   {
-  //     "before": ["L"],
-  //     "after": ["2", "2", "l"]
-  //   },
-  //   {
-  //     "before": ["H"],
-  //     "after": ["2", "2", "h"]
-  //   }
-  // ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["J"],
+      "after": ["1", "5", "j"]
+    },
+    {
+      "before": ["K"],
+      "after": ["1", "5", "k"]
+    },
+    {
+      "before": ["L"],
+      "after": ["2", "2", "l"]
+    },
+    {
+      "before": ["H"],
+      "after": ["2", "2", "h"]
+    }
+  ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["T"],
-      "after": ["i", "<Enter>", "<Esc>","a"]
+      "after": ["i", "<Enter>", "<Esc>"]
+    },
+    {
+      "before": ["Y"],
+      "after": ["v", "k", "$", "x"]
+    },
+    {
+      "before": [","],
+      "after": ["<C-e>"]
+    },
+    {
+      "before": ["m"],
+      "after": ["<C-y>"]
+    },
+    {
+      "before": ["J"],
+      "after": ["1", "5", "j"]
+    },
+    {
+      "before": ["K"],
+      "after": ["1", "5", "k"]
+    },
+    {
+      "before": ["L"],
+      "after": ["2", "2", "l"]
+    },
+    {
+      "before": ["H"],
+      "after": ["2", "2", "h"]
     }
-    // {
-    //   "before": ["Y"],
-    //   "after": ["v", "k", "$", "x"]
-    // },
-    // {
-    //   "before": [","],
-    //   "after": ["<C-e>"]
-    // },
-    // {
-    //   "before": ["m"],
-    //   "after": ["<C-y>"]
-    // },
-    // {
-    //   "before": ["J"],
-    //   "after": ["1", "5", "j"]
-    // },
-    // {
-    //   "before": ["K"],
-    //   "after": ["1", "5", "k"]
-    // },
-    // {
-    //   "before": ["L"],
-    //   "after": ["2", "2", "l"]
-    // },
-    // {
-    //   "before": ["H"],
-    //   "after": ["2", "2", "h"]
-    // }
   ],
   // editor
   "editor.renderLineHighlight": "all",

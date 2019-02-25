@@ -1,9 +1,5 @@
 [
   {
-    "key": "f2",
-    "command": "localextension.multi.down",
-  },
-  {
     "key": "ctrl+n",
     "command": "workbench.view.explorer"
   },
@@ -1053,5 +1049,15 @@
     "key": "ctrl+a",
     "command": "-extension.vim_ctrl+a",
     "when": "editorTextFocus && vim.active && vim.use<C-a> && !inDebugRepl"
+  },
+  {
+    "key": "f2",
+    "command": "localextension.listAutomaticKeyboardNavigation.disable",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+alt+=",
+    "command": "localextension.listAutomaticKeyboardNavigation.enable",
+    "when": "!terminalFocus"
   }
 ]
