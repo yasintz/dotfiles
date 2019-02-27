@@ -206,7 +206,8 @@
   "gitlens.advanced.messages": {
     "suppressLineUncommittedWarning": true
   },
-  // "gitlens.codeLens.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
   "gitlens.statusBar.enabled": false,
   //color
   "editor.tokenColorCustomizations": {
