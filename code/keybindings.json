@@ -881,11 +881,6 @@
     "when": "editorTextFocus && editorLangId != 'markdown'"
   },
   {
-    "key": "ctrl+alt+p",
-    "command": "clipboard.pasteFromClipboard",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "ctrl+shift+v",
     "command": "-clipboard.pasteFromClipboard",
     "when": "editorTextFocus"
@@ -1059,5 +1054,21 @@
     "key": "ctrl+alt+=",
     "command": "localextension.listAutomaticKeyboardNavigation.enable",
     "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+alt+]",
+    "command": "gitlens.views.compare:gitlens.focus"
+  },
+  {
+    "key": "ctrl+alt+p",
+    "command": "localextension.paste.new-line"
+  },
+  {
+    "key": "pausebreak",
+    "command": "workbench.action.toggleDevTools"
+  },
+  {
+    "key": "ctrl+pausebreak",
+    "command": "workbench.action.toggleScreencastMode"
   }
 ]
