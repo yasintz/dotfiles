@@ -8,7 +8,24 @@
         { "exec": "tap:k" },
         { "exec": "tap:p" }
       ]
-      // "repeat": 4
+    },
+    {
+      "exec": "localextension.explorer.multi-action.up",
+      "commandList": [
+        {
+          "exec": "list.focusUp",
+          "repeat": 10
+        }
+      ]
+    },
+    {
+      "exec": "localextension.explorer.multi-action.down",
+      "commandList": [
+        {
+          "exec": "list.focusDown",
+          "repeat": 10
+        }
+      ]
     }
   ],
   "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
@@ -111,11 +128,10 @@
   "workbench.colorTheme": "Monokai",
   "workbench.colorCustomizations": {
     "editor.findMatchBackground": "#fff",
-    "editor.findMatchHighlightBackground": "#fff",
     "editor.findMatchHighlightBorder": "#efff00",
     "editor.findRangeHighlightBackground": "#fff",
     "editor.selectionHighlightBorder": "#1aff00",
-    "editor.selectionBackground": "#284225",
+    "editor.selectionBackground": "#2f6229",
     "editorLineNumber.activeForeground": "#efff00",
     "editor.background": "#24262E",
     "activityBar.background": "#272932",

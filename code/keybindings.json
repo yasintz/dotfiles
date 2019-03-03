@@ -1070,5 +1070,30 @@
   {
     "key": "ctrl+pausebreak",
     "command": "workbench.action.toggleScreencastMode"
+  },
+  {
+    "key": "insert",
+    "command": "editor.action.selectHighlights",
+    "when": "editorFocus && vim.mode != 'Insert' "
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "-editor.action.selectHighlights",
+    "when": "editorFocus"
+  },
+  {
+    "key": "insert",
+    "command": "-extension.vim_insert",
+    "when": "editorTextFocus && vim.active && !inDebugRepl"
+  },
+  {
+    "key": "shift+k",
+    "command": "localextension.explorer.multi-action.up",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "shift+j",
+    "command": "localextension.explorer.multi-action.down",
+    "when": "listFocus && !inputFocus"
   }
 ]
