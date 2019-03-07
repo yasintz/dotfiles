@@ -97,7 +97,7 @@
     // "**/*Docker*": true
   },
   // window
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
   "window.titleBarStyle": "custom",
   "window.menuBarVisibility": "default",
   // lang cutomize
@@ -215,7 +215,7 @@
   "editor.minimap.enabled": false,
   "editor.wordWrap": "on",
   "editor.tabSize": 2,
-  "editor.fontSize": 15,
+  "editor.fontSize": 18,
   "editor.cursorStyle": "block",
   "editor.rulers": [120],
   // gitlens

@@ -415,8 +415,9 @@
     "command": "editor.action.transformToUppercase"
   },
   {
-    "key": "f7",
-    "command": "editor.action.formatDocument"
+    "key": "shift+f",
+    "command": "editor.action.formatDocument",
+    "when": "!listFocus && inputFocus && vim.mode != 'Insert'"
   },
   {
     "key": "f2",
@@ -974,7 +975,8 @@
   },
   {
     "key": "shift+q",
-    "command": "editor.action.addSelectionToNextFindMatch"
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "vim.mode != 'Insert'"
   },
   {
     "key": "ctrl+8",
@@ -1095,5 +1097,14 @@
     "key": "shift+j",
     "command": "localextension.explorer.multi-action.down",
     "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "shift+s",
+    "command": "workbench.action.files.save",
+    "when": "!listFocus && inputFocus && vim.mode != 'Insert'"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "-workbench.action.files.save"
   }
 ]
