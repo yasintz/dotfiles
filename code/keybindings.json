@@ -44,11 +44,6 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "o",
-    "command": "list.select",
-    "when": "listFocus && !inputFocus"
-  },
-  {
     "key": "l",
     "command": "-list.select",
     "when": "listFocus && !inputFocus"
@@ -417,7 +412,7 @@
   {
     "key": "shift+f",
     "command": "editor.action.formatDocument",
-    "when": "!listFocus && inputFocus && vim.mode != 'Insert'"
+    "when": "!listFocus && vim.mode == 'Normal' && editorTextFocus"
   },
   {
     "key": "f2",
@@ -1101,10 +1096,49 @@
   {
     "key": "shift+s",
     "command": "workbench.action.files.save",
-    "when": "!listFocus && inputFocus && vim.mode != 'Insert'"
+    "when": "!listFocus && vim.mode == 'Normal' && editorTextFocus"
   },
   {
     "key": "ctrl+s",
     "command": "-workbench.action.files.save"
+  },
+  {
+    "key": "right",
+    "command": "-list.expand",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "o",
+    "command": "-list.toggleExpand",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "enter",
+    "command": "-list.select",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "h",
+    "command": "-list.collapse",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "list.toggleExpand",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "space",
+    "command": "-list.toggleExpand",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "list.select"
+  },
+  {
+    "key": "o",
+    "command": "localextension.explorer.select-or-toggle-expand",
+    "when": "listFocus && !inputFocus"
   }
 ]

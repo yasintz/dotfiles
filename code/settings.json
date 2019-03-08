@@ -1,7 +1,9 @@
 {
+  "workbench.list.automaticKeyboardNavigation": false,
   "localextension.multi-commands": [
     {
       "exec": "localextension.paste.new-line",
+      // ctrl+alt+p
       "commandList": [
         { "exec": "tap:l" },
         { "exec": "tap:T" },
@@ -11,6 +13,7 @@
     },
     {
       "exec": "localextension.explorer.multi-action.up",
+      // shift + k
       "commandList": [
         {
           "exec": "list.focusUp",
@@ -20,10 +23,23 @@
     },
     {
       "exec": "localextension.explorer.multi-action.down",
+      // shift + j
       "commandList": [
         {
           "exec": "list.focusDown",
           "repeat": 10
+        }
+      ]
+    },
+    {
+      "exec": "localextension.explorer.select-or-toggle-expand",
+      // o
+      "commandList": [
+        {
+          "exec": "list.select"
+        },
+        {
+          "exec": "list.toggleExpand"
         }
       ]
     }
@@ -97,7 +113,7 @@
     // "**/*Docker*": true
   },
   // window
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -1,
   "window.titleBarStyle": "custom",
   "window.menuBarVisibility": "default",
   // lang cutomize
@@ -215,7 +231,7 @@
   "editor.minimap.enabled": false,
   "editor.wordWrap": "on",
   "editor.tabSize": 2,
-  "editor.fontSize": 18,
+  "editor.fontSize": 15,
   "editor.cursorStyle": "block",
   "editor.rulers": [120],
   // gitlens
