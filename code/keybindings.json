@@ -824,11 +824,6 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "f1",
-    "command": "editor.action.startFindReplaceAction",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "ctrl+h",
     "command": "-editor.action.startFindReplaceAction"
   },
@@ -1043,7 +1038,7 @@
     "when": "editorTextFocus && vim.active && vim.use<C-a> && !inDebugRepl"
   },
   {
-    "key": "f2",
+    "key": "ctrl+f2",
     "command": "localextension.listAutomaticKeyboardNavigation.disable",
     "when": "!terminalFocus"
   },
@@ -1140,5 +1135,22 @@
     "key": "o",
     "command": "localextension.explorer.select-or-toggle-expand",
     "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+l",
+    "command": "localextension.common.yasin"
+  },
+  {
+    "key": "ctrl+f2",
+    "command": "-editor.action.changeAll",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "f1",
+    "command": "workbench.action.navigateBack"
+  },
+  {
+    "key": "f2",
+    "command": "workbench.action.navigateForward"
   }
 ]
