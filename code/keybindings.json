@@ -1225,36 +1225,6 @@
     "when": "findWidgetVisible && !replaceActive"
   },
   {
-    "key": "f2",
-    "command": "workbench.action.output.toggleOutput",
-    "when": "panelFocus && activePanel == 'workbench.panel.repl'"
-  },
-  {
-    "key": "f2",
-    "command": "workbench.action.terminal.toggleTerminal",
-    "when": "panelFocus && activePanel == 'workbench.panel.output'"
-  },
-  {
-    "key": "f2",
-    "command": "workbench.debug.action.toggleRepl",
-    "when": "panelFocus && activePanel == 'workbench.panel.terminal'"
-  },
-  {
-    "key": "f1",
-    "command": "workbench.action.output.toggleOutput",
-    "when": "panelFocus && activePanel == 'workbench.panel.terminal'"
-  },
-  {
-    "key": "f1",
-    "command": "workbench.action.terminal.toggleTerminal",
-    "when": "panelFocus && activePanel == 'workbench.panel.repl'"
-  },
-  {
-    "key": "f1",
-    "command": "workbench.debug.action.toggleRepl",
-    "when": "panelFocus && activePanel == 'workbench.panel.output'"
-  },
-  {
     "key": "f3",
     "command": "workbench.action.focusSideBar",
     "when": "!sideBarFocus"
@@ -1273,5 +1243,35 @@
     "key": "f5",
     "command": "workbench.action.debug.stop",
     "when": "inDebugMode"
+  },
+  {
+    "key": "ctrl+'",
+    "command": "workbench.action.output.toggleOutput",
+    "when": "panelFocus && activePanel == 'workbench.panel.repl'"
+  },
+  {
+    "key": "ctrl+'",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "panelFocus && activePanel == 'workbench.panel.output'"
+  },
+  {
+    "key": "ctrl+'",
+    "command": "workbench.debug.action.toggleRepl",
+    "when": "panelFocus && activePanel == 'workbench.panel.terminal'"
+  },
+  {
+    "key": "ctrl+shift+'",
+    "command": "workbench.action.output.toggleOutput",
+    "when": "panelFocus && activePanel == 'workbench.panel.terminal'"
+  },
+  {
+    "key": "ctrl+shift+'",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "panelFocus && activePanel == 'workbench.panel.repl'"
+  },
+  {
+    "key": "ctrl+shift+'",
+    "command": "workbench.debug.action.toggleRepl",
+    "when": "panelFocus && activePanel == 'workbench.panel.output'"
   }
 ]
