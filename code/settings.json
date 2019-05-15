@@ -1,59 +1,43 @@
 {
-  "workbench.list.automaticKeyboardNavigation": false,
-  "gitlens.codeLens.enabled": false,
-  "localextension.multi-commands": [
+  "multiCommand.commands": [
     {
-      "exec": "localextension.paste.new-line",
-      // ctrl+alt+p
-      "commandList": [
-        { "exec": "tap:l" },
-        { "exec": "tap:T" },
-        { "exec": "tap:k" },
-        { "exec": "tap:p" }
+      "command": "localextension.explorer.multi-action.up",
+      "sequence": [
+        "list.focusUp",
+        "list.focusUp",
+        "list.focusUp",
+        "list.focusUp",
+        "list.focusUp",
+        "list.focusUp",
+        "list.focusUp",
+        "list.focusUp",
+        "list.focusUp",
+        "list.focusUp"
       ]
     },
     {
-      "exec": "localextension.explorer.multi-action.up",
-      // shift + k
-      "commandList": [
-        {
-          "exec": "list.focusUp",
-          "repeat": 10
-        }
-      ]
-    },
-    {
-      "exec": "localextension.explorer.multi-action.down",
-      // shift + j
-      "commandList": [
-        {
-          "exec": "list.focusDown",
-          "repeat": 10
-        }
-      ]
-    },
-    {
-      "exec": "localextension.explorer.select-or-toggle-expand",
-      // o
-      "commandList": [
-        {
-          "exec": "list.select"
-        },
-        {
-          "exec": "list.toggleExpand"
-        }
+      "command": "localextension.explorer.multi-action.down",
+      "sequence": [
+        "list.focusDown",
+        "list.focusDown",
+        "list.focusDown",
+        "list.focusDown",
+        "list.focusDown",
+        "list.focusDown",
+        "list.focusDown",
+        "list.focusDown",
+        "list.focusDown",
+        "list.focusDown"
       ]
     }
   ],
-  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
-  // emmet
+  // "emmet.showExpandedAbbreviation": "never",
   "emmet.includeLanguages": {
     "vue": "html"
   },
-  "html-css-class-completion.includeGlobPattern": "**/*.{css,html,vue,js}",
-  "html-css-class-completion.enableEmmetSupport": true,
+  // "html-css-class-completion.includeGlobPattern": "**/*.{css,html,vue,js}",
+  // "html-css-class-completion.enableEmmetSupport": true,
   //vetur
-  // "update.channel": "none",
   "vetur.validation.template": false,
   "vetur.format.defaultFormatter.js": "prettier",
   "vetur.format.defaultFormatterOptions": {
@@ -90,11 +74,11 @@
     "**/.flutter-plugins": true,
     "**/CVS": true,
     "**/.DS_Store": true,
-    "**/node_modules": true,
+    "**/node_modules": true
     // ".vscode": true,
     // file
     // "**/*ignore": true,
-    "**/*.log": true
+    // "**/*.log": true
   },
   "search.exclude": {
     // folder
@@ -114,19 +98,25 @@
     // "**/*Docker*": true
   },
   // window
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -1,
   "window.titleBarStyle": "custom",
   "window.menuBarVisibility": "default",
   // lang cutomize
   "html.validate.scripts": false,
   "typescript.updateImportsOnFileMove.enabled": "never",
   "javascript.updateImportsOnFileMove.enabled": "never",
-  "dart.promptToGetPackages": false,
-  "dart.runPubGetOnPubspecChanges": false,
-  "java.home": "C:/Program Files/Java/jdk1.8.0_172",
+  // "dart.promptToGetPackages": false,
+  // "dart.runPubGetOnPubspecChanges": false,
   //explorer
   "explorer.confirmDelete": false,
-  // workbench
+  /*
+    ##########################
+    *******  WORKBENCH *******
+    ##########################
+  */
+  "workbench.list.automaticKeyboardNavigation": false,
+  "workbench.settings.openDefaultKeybindings": true,
+  "workbench.iconTheme": "vscode-icons",
   "workbench.sideBar.location": "right",
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "newUntitledFile",
@@ -140,33 +130,23 @@
       }
     }
   },
-  //color icon
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "Monokai",
-  "workbench.colorCustomizations": {
-    "editor.findMatchBackground": "#fff",
-    "editor.findMatchHighlightBorder": "#efff00",
-    "editor.findRangeHighlightBackground": "#fff",
-    "editor.selectionHighlightBorder": "#1aff00",
-    "editor.selectionBackground": "#2f6229",
-    "editorLineNumber.activeForeground": "#efff00",
-    "editor.background": "#24262E",
-    "activityBar.background": "#272932",
-    "statusBar.background": "#272932",
-    "sideBar.background": "#1e2027",
-    "tab.activeBackground": "#4749af",
-    "tab.inactiveBackground": "#24262E",
-    "tab.border": "#ababab",
-    "titleBar.activeBackground": "#272932"
-  },
-  "git.enableSmartCommit": true,
-  // eslint - prettier
+  /*
+    ##################################
+    ******* ESLINT - PRETTIER  *******
+    ##################################
+  */
+  "eslint.packageManager": "yarn",
+  "eslint.workingDirectories": [
+    { "directory": "./core-api" },
+    { "directory": "./web-server" }
+  ],
   "prettier.jsxSingleQuote": true,
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
   "prettier.eslintIntegration": true,
   "eslint.validate": [
     "javascript",
+    "typescript",
     "javascriptreact",
     {
       "language": "vue",
@@ -227,7 +207,11 @@
       "after": ["2", "2", "h"]
     }
   ],
-  // editor
+  /*
+    ##########################
+    *******  EDITOR  *******
+    ##########################
+  */
   "editor.renderLineHighlight": "all",
   "editor.minimap.enabled": false,
   "editor.wordWrap": "on",
@@ -235,14 +219,51 @@
   "editor.fontSize": 14,
   "editor.cursorStyle": "block",
   "editor.rulers": [120],
-  // gitlens
+  /*
+    ##########################
+    *******  GITLENS  *******
+    ##########################
+  */
+  "gitlens.codeLens.enabled": false,
+  // "git.enableSmartCommit": true,
   "gitlens.advanced.messages": {
     "suppressLineUncommittedWarning": true
   },
   "gitlens.codeLens.recentChange.enabled": false,
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.statusBar.enabled": false,
-  //color
+  /*
+    ##########################
+    *******  NPM  *******
+    ##########################
+  */
+  "npm.enableScriptExplorer": true,
+  "npm.packageManager": "yarn",
+
+  /*
+    ##########################
+    *******  COLOR  *******
+    ##########################
+  */
+  "workbench.colorTheme": "Monokai",
+  "workbench.colorCustomizations": {
+    "editor.findMatchBackground": "#fff",
+    "editor.findMatchHighlightBorder": "#efff00",
+    "editor.findRangeHighlightBackground": "#fff",
+    "editor.selectionHighlightBorder": "#1aff00",
+    "editor.selectionBackground": "#2f6229",
+    "editorLineNumber.activeForeground": "#efff00",
+    "editor.background": "#24262E",
+    "activityBar.background": "#272932",
+    "statusBar.background": "#272932",
+    "sideBar.background": "#1e2027",
+    "panel.border": "#69852d",
+    "sideBar.border": "#69852d",
+    "tab.activeBackground": "#4749af",
+    "tab.inactiveBackground": "#24262E",
+    "tab.border": "#ababab",
+    "titleBar.activeBackground": "#272932"
+  },
   "editor.tokenColorCustomizations": {
     "comments": "#6A9955",
     "strings": "#CE9178",
@@ -304,5 +325,28 @@
         }
       }
     ]
+  },
+  /*
+    ##########################
+    *******  FORMATTER *******
+    ##########################
+  */
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
