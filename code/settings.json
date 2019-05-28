@@ -1,37 +1,5 @@
 {
-  "multiCommand.commands": [
-    {
-      "command": "localextension.explorer.multi-action.up",
-      "sequence": [
-        "list.focusUp",
-        "list.focusUp",
-        "list.focusUp",
-        "list.focusUp",
-        "list.focusUp",
-        "list.focusUp",
-        "list.focusUp",
-        "list.focusUp",
-        "list.focusUp",
-        "list.focusUp"
-      ]
-    },
-    {
-      "command": "localextension.explorer.multi-action.down",
-      "sequence": [
-        "list.focusDown",
-        "list.focusDown",
-        "list.focusDown",
-        "list.focusDown",
-        "list.focusDown",
-        "list.focusDown",
-        "list.focusDown",
-        "list.focusDown",
-        "list.focusDown",
-        "list.focusDown"
-      ]
-    }
-  ],
-  // "emmet.showExpandedAbbreviation": "never",
+  "emmet.showExpandedAbbreviation": "never",
   "emmet.includeLanguages": {
     "vue": "html"
   },
@@ -116,7 +84,6 @@
   */
   "workbench.list.automaticKeyboardNavigation": false,
   "workbench.settings.openDefaultKeybindings": true,
-  "workbench.iconTheme": "vscode-icons",
   "workbench.sideBar.location": "right",
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "newUntitledFile",
@@ -154,25 +121,8 @@
     }
   ],
   // vim
+
   "vim.foldfix": true,
-  "vim.visualModeKeyBindings": [
-    {
-      "before": ["J"],
-      "after": ["1", "5", "j"]
-    },
-    {
-      "before": ["K"],
-      "after": ["1", "5", "k"]
-    },
-    {
-      "before": ["L"],
-      "after": ["2", "2", "l"]
-    },
-    {
-      "before": ["H"],
-      "after": ["2", "2", "h"]
-    }
-  ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["T"],
@@ -181,30 +131,6 @@
     {
       "before": ["Y"],
       "after": ["v", "k", "$", "x"]
-    },
-    {
-      "before": [","],
-      "after": ["<C-e>"]
-    },
-    {
-      "before": ["m"],
-      "after": ["<C-y>"]
-    },
-    {
-      "before": ["J"],
-      "after": ["1", "5", "j"]
-    },
-    {
-      "before": ["K"],
-      "after": ["1", "5", "k"]
-    },
-    {
-      "before": ["L"],
-      "after": ["2", "2", "l"]
-    },
-    {
-      "before": ["H"],
-      "after": ["2", "2", "h"]
     }
   ],
   /*
@@ -257,8 +183,8 @@
     "activityBar.background": "#272932",
     "statusBar.background": "#272932",
     "sideBar.background": "#1e2027",
-    "panel.border": "#69852d",
-    "sideBar.border": "#69852d",
+    // "panel.border": "#69852d",
+    // "sideBar.border": "#69852d",
     "tab.activeBackground": "#4749af",
     "tab.inactiveBackground": "#24262E",
     "tab.border": "#ababab",
@@ -348,5 +274,9 @@
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.iconTheme": "vscode-icons"
 }

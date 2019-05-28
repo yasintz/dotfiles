@@ -1,0 +1,62 @@
+alias ..='cd ..'
+
+alias ll='ls -alF'
+
+
+alias la='ls -A'
+alias l='ls -CF'
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias fdcm='cd $HOME/Documents'
+alias fhdd='cd /media/harddisk/'
+
+alias fk='cd /media/harddisk/project/kommunity-monorepo/'
+
+alias komstartapi='fk && cd core-api && docker-compose up'
+
+alias dockerclear="docker images | grep none | awk '{ print $3; }' | xargs docker rmi -f"
+alias dockeragain="fk && cd core-api && docker-compose down --volumes && docker-compose build && yarn container:start"
+# tmux command
+alias sp='tmux split-window -h -c "#{pane_current_path}"'
+alias vsp='tmux split-window -v -c "#{pane_current_path}"'
+start(){
+  gnome-open $1
+}
+
+# git branch name
+parse_git_dirty() {
+  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working tree clean" ]] && echo "*"
+}
+
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+git_branch(){
+  if [ -z "$(parse_git_branch)" ]; then
+    echo ""
+    return 1
+  fi
+  if [ "$(parse_git_dirty)" == "*" ]; then
+    echo "\[\e[31m\]$(parse_git_branch)\[\e[m\]"
+    return 2
+  else
+    echo "\[\e[32m\]$(parse_git_branch)\[\e[m\]"
+    return 3
+  fi
+}
+
+# git branch name
+updateGitBranchAndStatus(){
+  # 41 bg red
+  # 42 bg green 
+  # 43 bg yellow 
+  local userName="\[\e[32m\]-\[\e[m\]\[\e[31m\]\u\[\e[m\]"
+  #local dirPath="\[\e[42m\]\[\e[30m\]\w\[\e[m\]\[\e[m\]"
+  local dirPath="\[\e[33m\]\w\[\e[m\]"
+  #PS1="$userName$dirPath$(git_branch) $ "
+  PS1=" $dirPath$(git_branch) $ "
+}
+updateCommand(){
+  updateGitBranchAndStatus
+}
+PROMPT_COMMAND='updateCommand $PROMPT_COMMAND'
+
