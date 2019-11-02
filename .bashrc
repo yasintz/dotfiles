@@ -122,6 +122,9 @@ alias ..='cd ..'
 # tmux command
 alias sp='tmux split-window -h -c "#{pane_current_path}"'
 alias vsp='tmux split-window -v -c "#{pane_current_path}"'
+alias wssh="/mnt/c/Windows/System32/cmd.exe"
+alias pssh="/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe"
+
 start(){
   gnome-open $1
 }
