@@ -165,4 +165,5 @@ PROMPT_COMMAND='updateCommand $PROMPT_COMMAND'
 export NVS_HOME="$HOME/.nvs"
 [ -s "$NVS_HOME/nvs.sh" ] && . "$NVS_HOME/nvs.sh"
 
-LS_COLORS=$LS_COLORS:'ow=34:' ; export LS_COLORS
+LS_COLORS=$LS_COLORS:'ow=36:';
+export LS_COLORS
