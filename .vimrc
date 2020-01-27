@@ -1,5 +1,5 @@
-set nocompatible 
-filetype off      
+set nocompatible
+filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -19,8 +19,8 @@ Plugin 'kien/ctrlp.vim'
 "Plugin 'valloric/matchtagalways'
 "Plugin 'scrooloose/nerdcommenter'
 
-call vundle#end()  
-filetype plugin indent on  
+call vundle#end()
+filetype plugin indent on
 
 
 let g:jsx_ext_required = 0
